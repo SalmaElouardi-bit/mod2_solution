@@ -1,0 +1,139 @@
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: #333;
+    text-align: center;
+}
+
+
+nav {
+    background: #4A90E2;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+h2, h3 {
+    color: #333;
+    font-weight: bold;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+form {
+    background: #fff3e0;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background: linear-gradient(to right, #ff6f61, #de6262);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff8a65, #ff6f61);
+    transform: scale(1.05);
+}
+
+
+a {
+    color: #e91e63;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff5722;
+}
+
+/* Quiz */
+.quiz-question {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.quiz-options {
+    margin-left: 20px;
+}
+
+
+.quiz-options input {
+    margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
